@@ -1,0 +1,10 @@
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.csproj.AssemblyReference.cache
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.AssemblyInfoInputs.cache
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.AssemblyInfo.cs
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.csproj.CoreCompileInputs.cache
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\bin\Release\net45\win-x64\USBUnlocker.exe.config
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\bin\Release\net45\win-x64\USBUnlocker.exe
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\bin\Release\net45\win-x64\USBUnlocker.pdb
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.exe
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\obj\Release\net45\win-x64\USBUnlocker.pdb

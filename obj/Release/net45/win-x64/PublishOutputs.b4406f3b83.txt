@@ -1,0 +1,3 @@
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\dist\USBUnlocker.exe
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\dist\USBUnlocker.exe.config
+C:\Users\Arshi\Desktop\zz\hapo-chat\USBUnlocker\dist\USBUnlocker.pdb
