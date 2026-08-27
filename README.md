@@ -1,20 +1,24 @@
-# USBUnlocker
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Heavenly Keys — Portable Windows USB diagnostic and repair toolkit">
+</p>
+
+# Heavenly Keys
 
 **Portable Windows IT Diagnostic and Repair Toolkit**
 
-USBUnlocker (also known as *Heavenly Keys*) is a comprehensive USB mass storage diagnostic and repair tool for authorized administration of Windows systems. It scans, diagnoses, and repairs USB restrictions caused by Group Policy, registry settings, or domain policies -- and doubles as a general-purpose IT health toolkit.
+Also known as *USBUnlocker*. A comprehensive USB mass storage diagnostic and repair tool for authorized administration of Windows systems. It scans, diagnoses, and repairs USB restrictions caused by Group Policy, registry settings, or domain policies — and doubles as a general-purpose IT health toolkit.
 
 ## Features
 
-- **USB Scan & Repair** -- Detect and repair USB storage restrictions (USBSTOR service, write protection, removable storage policies, device install restrictions, drive visibility)
-- **System Diagnostics** -- System info, hardware inventory, driver audit, service audit, Windows integrity check
-- **Network & Security** -- Network diagnostic, security configuration analysis, Windows event log analysis
-- **Reporting** -- Full diagnostic reports, JSON export, ZIP archive creation
-- **Workflows** -- Multi-step workflows that chain scan, repair, and verify operations with confirmation prompts
-- **Silent Mode** -- Batch/automation-friendly mode with exit codes
-- **Rollback** -- Restore previous USB configuration from backups
-- **Dry Run** -- Detect issues without making any changes
-- **Dynamic Menu** -- Auto-generated interactive menu with keyboard shortcuts, search, and capability inspector
+- **USB Scan & Repair** — Detect and repair USB storage restrictions (USBSTOR service, write protection, removable storage policies, device install restrictions, drive visibility)
+- **System Diagnostics** — System info, hardware inventory, driver audit, service audit, Windows integrity check
+- **Network & Security** — Network diagnostic, security configuration analysis, Windows event log analysis
+- **Reporting** — Full diagnostic reports, JSON export, ZIP archive creation
+- **Workflows** — Multi-step workflows that chain scan, repair, and verify operations with confirmation prompts
+- **Silent Mode** — Batch/automation-friendly mode with exit codes
+- **Rollback** — Restore previous USB configuration from backups
+- **Dry Run** — Detect issues without making any changes
+- **Dynamic Menu** — Auto-generated interactive menu with keyboard shortcuts, search, and capability inspector
 
 ## Requirements
 
@@ -59,7 +63,7 @@ Exit codes in silent mode:
 
 | Code | Meaning                              |
 |------|--------------------------------------|
-| 0    | Success -- USB access verified       |
+| 0    | Success — USB access verified        |
 | 1    | USB access still blocked             |
 | 2    | Domain-joined machine detected       |
 | 3    | External USB device restrictions     |
@@ -94,7 +98,7 @@ Keyboard shortcuts:
 ## Project Structure
 
 ```
-USBUnlocker/
+Heavenly Keys/
 ├── src/
 │   ├── Program.cs              # Entry point
 │   ├── core/
@@ -143,17 +147,17 @@ USBUnlocker/
 
 ## How It Works
 
-1. **Startup** -- The tool checks for administrator privileges and prompts for UAC elevation if needed. It detects the Windows version and architecture.
+1. **Startup** — The tool checks for administrator privileges and prompts for UAC elevation if needed. It detects the Windows version and architecture.
 
-2. **Capability Discovery** -- All features are registered as *capabilities* with metadata (admin requirement, risk level, dependencies). The menu is built dynamically from this registry.
+2. **Capability Discovery** — All features are registered as *capabilities* with metadata (admin requirement, risk level, dependencies). The menu is built dynamically from this registry.
 
-3. **Scan** -- Reads Windows registry keys to detect USB restrictions: USBSTOR service status, write protection policies, removable storage deny policies, device installation restrictions, and drive visibility policies.
+3. **Scan** — Reads Windows registry keys to detect USB restrictions: USBSTOR service status, write protection policies, removable storage deny policies, device installation restrictions, and drive visibility policies.
 
-4. **Repair** -- Backs up current settings, then modifies registry keys to restore USB access. Each operation is logged.
+4. **Repair** — Backs up current settings, then modifies registry keys to restore USB access. Each operation is logged.
 
-5. **Verify** -- Re-reads registry keys to confirm that restrictions have been lifted.
+5. **Verify** — Re-reads registry keys to confirm that restrictions have been lifted.
 
-6. **Reporting** -- Generates text reports, JSON data exports, and ZIP archives of all diagnostic results.
+6. **Reporting** — Generates text reports, JSON data exports, and ZIP archives of all diagnostic results.
 
 ## Architecture
 
@@ -162,7 +166,7 @@ The application uses a **capability registry** pattern:
 - Features are self-describing `Capability` objects with an ID, category, action delegate, risk level, and dependency list.
 - The `FeatureRegistry` auto-generates workflows from compatible capabilities (e.g., "USB Repair Pipeline" chains scan, repair, and verify).
 - Context actions appear only when relevant (e.g., "Quick Repair" shows after a scan finds issues).
-- The menu, help, search, and inspector are all driven from the same registry -- no hardcoded menus.
+- The menu, help, search, and inspector are all driven from the same registry — no hardcoded menus.
 
 ## License
 
